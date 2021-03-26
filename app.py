@@ -24,5 +24,7 @@ def confirmation():
     if confirmation:
         records.update_one({'email': email}, {'confirmation': True})
 
+
+
 if __name__ == '__main__':
     app.run()
