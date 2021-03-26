@@ -11,7 +11,8 @@ base_route = '/api/v1/'
 
 @app.route(base_route)
 def hello():
-    return user.find()
+    for x in user.find():
+        return x
 
 
 if __name__ == '__main__':
