@@ -13,7 +13,8 @@ base_route = '/api/v1/'
 def hello():
     return "hello world"
 
-@app.route(base_route+'test'):
+@app.route(base_route+'test')
+def test():
     return user.find()
 
 if __name__ == '__main__':
