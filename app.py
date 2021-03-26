@@ -15,7 +15,8 @@ def hello():
 
 @app.route(base_route+'test')
 def test():
-    return user.find()
+    for x in user.find():
+        return x
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
